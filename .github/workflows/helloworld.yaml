@@ -8,18 +8,18 @@ on:
     branches:
       - master
     workflow_dispatch:
-  jobs:
-    hello:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: helloworld2
-          run: echo "hello world why is there so many hello worlds? cuz i want them all."
-          shell: bash
-    bye:
-      runs-on: ubuntu-latest
-      steps:
-        - name: bye-bye
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: helloworld2
+        run: echo "hello world why is there so many hello worlds? cuz i want them all."
+        shell: bash
+  bye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: bye-bye
         run: echo "haha goodbye thanks for making a push/pull"
         shell: bash
 
