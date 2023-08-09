@@ -12,7 +12,7 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: helloworld2
         run: echo "hello world why is there so many hello worlds? cuz i want them all."
         shell: bash
